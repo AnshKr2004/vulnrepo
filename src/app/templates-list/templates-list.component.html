@@ -16,7 +16,7 @@
             <mat-label>Select a source</mat-label>
           
             <mat-select disableRipple [(value)]="sourceSelect" (selectionChange)="changeselect()">
-              <mat-option value="VULNREPO">VULNRΞPO</mat-option>
+              <mat-option value="VOLTSEC">Voltsec.io</mat-option>
               <mat-option value="CWE">CWE Research Concepts</mat-option>
               <mat-option value="MENTERPRISE">MITRE ATT&CK Enterprise</mat-option>
               <mat-option value="MMOBILE">MITRE ATT&CK Mobile</mat-option>
@@ -31,9 +31,9 @@
   </div>
 
   <mat-card appearance="outlined" class="mdc-card my-card-content mdc-typography--body1" style="background-color: #ffffff30;">
-    <div *ngIf="sourceSelect == 'VULNREPO'">
+    <div *ngIf="sourceSelect == 'VOLTSEC'">
       <p>
-        List contains issues templates used during creating a report, source name: "VULNRΞPO". Share your templates on: 
+        List contains issues templates used during creating a report, source name: "Voltsec.io". Share your templates on: 
       <button mat-button color="accent" (click)="create_issue()">
         <mat-icon class="vertical-align-middle padding-bottom-3" matSuffix>add_circle</mat-icon> Add custom template
       </button> or directly edit /assets/vulns.json and make Pull Request to `dev` branch.

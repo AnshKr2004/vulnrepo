@@ -1,6 +1,6 @@
 <div align="center"><img src="/src/assets/logo/logo.jpg" width="300"></div>
 
-# VULNRΞPO - Vulnerability Report Generator & Repository
+# Voltsec.io - Vulnerability Report Generator & Repository
 
 Check online: 
 
@@ -51,4 +51,4 @@ You can run the project as a docker build using the included docker-compose.yml.
 
 ## Licencing
 
-VULNRΞPO is released under the [Apache 2.0 Licence](https://www.apache.org/licenses/LICENSE-2.0)
+Voltsec.io is released under the [Apache 2.0 Licence](https://www.apache.org/licenses/LICENSE-2.0)

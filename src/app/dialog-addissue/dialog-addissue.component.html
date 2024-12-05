@@ -12,7 +12,7 @@
         <mat-form-field appearance="outline" color="accent" class="example-full-width">
           <mat-label>Templates source</mat-label>
           <mat-select [(value)]="sourceSelect" (selectionChange)="changeselect()">
-            <mat-option value="VULNREPO"><img with="20" height="20" src="/favicon-32x32.png"> VULNRΞPO</mat-option>
+            <mat-option value="VOLTSEC"><img with="20" height="20" src="/favicon-32x32.png"> Voltsec.io</mat-option>
             <mat-option value="CVE"><mat-icon color="accent">public</mat-icon> CVE (ONLINE Database)</mat-option>
             <mat-option value="CWE">CWE Research Concepts</mat-option>
             <mat-option value="MENTERPRISE">MITRE ATT&CK Enterprise</mat-option>
@@ -31,7 +31,7 @@
 
 
     <div>
-      <div *ngIf="sourceSelect == 'VULNREPO'">
+      <div *ngIf="sourceSelect == 'VOLTSEC'">
           <mat-form-field class="example-full-width" color="accent">
             <mat-label>Issue title</mat-label>
             <mat-chip-grid #chipGrid aria-label="Issue title" [formControl]="gridaction">
@@ -262,7 +262,7 @@
         <span style="color: red;">{{err_msg}}</span>
     </div>
     <div mat-dialog-actions>
-      <button *ngIf="sourceSelect == 'VULNREPO'" mat-raised-button color="accent" (click)="addIssue()"><mat-icon class="vertical-align-middle padding-bottom-3">add</mat-icon> Add Issue</button>
+      <button *ngIf="sourceSelect == 'VOLTSEC'" mat-raised-button color="accent" (click)="addIssue()"><mat-icon class="vertical-align-middle padding-bottom-3">add</mat-icon> Add Issue</button>
       <button *ngIf="sourceSelect == 'CWE'" mat-raised-button color="accent" (click)="addIssueCWE()"><mat-icon class="vertical-align-middle padding-bottom-3">add</mat-icon> Add from CWE</button>
       <button *ngIf="sourceSelect == 'CVE'" mat-raised-button color="accent" (click)="addCVE()"><mat-icon class="vertical-align-middle padding-bottom-3">add</mat-icon> Add from CVE</button>
       <button *ngIf="sourceSelect == 'MMOBILE'" mat-raised-button color="accent" (click)="addattackMobile()"><mat-icon class="vertical-align-middle padding-bottom-3">add</mat-icon> Add from ATT&CK Mobile</button>
