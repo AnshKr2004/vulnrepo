@@ -22,7 +22,7 @@
         <p *ngIf="vulnrepojsonplease_wait">Please wait...<mat-progress-bar color="accent" mode="indeterminate"></mat-progress-bar></p>
         <p *ngIf="vulnrepowrongpass"><b style="color: red">Wrong security key!!!</b></p>
         <br>
-        <button mat-raised-button color="accent" (click)="startUpload(pass.value)">Import</button>&nbsp;&nbsp;<button mat-raised-button color="primary" (click)="cancel()">Cancel</button>
+        <button mat-raised-button color="accent" (click)="startUpload(pass.value)">Import</button>&nbsp;&nbsp;<button mat-raised-button color="accent" (click)="cancel()">Cancel</button>
       </span>
 
         <input *ngIf="selected_source == 'bugcrowd'" cdkFocusInitial type="file" accept=".csv" (change)="bugcrowdonFileSelect($event.target)" name="myfile">
@@ -113,6 +113,6 @@
 
         <br>
         <br>
-    <button *ngIf="selected_source != 'vulnrepojson'" mat-raised-button color="primary" (click)="cancel()">Cancel</button>
+    <button *ngIf="selected_source != 'vulnrepojson'" mat-raised-button color="accent" (click)="cancel()">Cancel</button>
   </div>
 </div>

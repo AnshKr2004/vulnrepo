@@ -5,7 +5,7 @@
 <div class="mdc-typography--body1" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px grid">
 
   <div fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%">
-    <mat-card appearance="outlined">
+    <mat-card appearance="outlined" style="background-color: #ffffff30;">
       <mat-card-header>
         <mat-icon mat-card-avatar class="vertical-align-middle padding-bottom-3 size-45">restore</mat-icon>
         <mat-card-title>Backup & Import</mat-card-title>
@@ -17,7 +17,7 @@
         <p>Note: Restoring the backup will add items to the current configuration!</p>
         <div fxLayout="row" fxLayoutGap="10px grid">
           <div fxFlex="100%" fxLayoutAlign="start">
-            <button mat-raised-button type="button" color="primary" (click)="myreportimporall.click()">
+            <button mat-raised-button type="button" color="accent" (click)="myreportimporall.click()">
               <mat-icon class="vertical-align-middle padding-bottom-3">playlist_add</mat-icon> Restore
             </button>
             <input hidden type="file" accept=".vulnrepo-backup" #myreportimporall
@@ -25,7 +25,7 @@
             &nbsp;
           </div>
           <div fxFlex="100%" fxLayoutAlign="end">
-            <button mat-raised-button color="primary" (click)="dumpallmyreports()">
+            <button mat-raised-button color="accent" (click)="dumpallmyreports()">
               <mat-icon class="vertical-align-middle padding-bottom-3">file_download</mat-icon> Backup all
             </button>
           </div>
@@ -35,7 +35,7 @@
     <br>
 
 
-    <mat-card appearance="outlined">
+    <mat-card appearance="outlined" style="background-color: #ffffff30;">
       <mat-card-header>
         <mat-icon mat-card-avatar class="vertical-align-middle padding-bottom-3 size-45">delete_forever</mat-icon>
         <mat-card-title>Remove all stored data</mat-card-title>
@@ -62,7 +62,7 @@
 
 
 
-    <mat-card appearance="outlined">
+    <mat-card appearance="outlined" style="background-color: #ffffff30;">
       <mat-card-header>
         <mat-icon mat-card-avatar
           class="vertical-align-middle padding-bottom-3 size-45">settings_applications</mat-icon>
@@ -145,16 +145,16 @@
         <br>
         <div fxLayout="row" fxLayoutGap="10px grid">
           <div fxFlex="100%" fxLayoutAlign="start">
-            <button mat-mini-fab color="primary" (click)="openDialogReportProfiles('open')" title="Add report profile">
+            <button mat-mini-fab style="color: white;" color="accent" (click)="openDialogReportProfiles('open')" title="Add report profile">
               <mat-icon class="vertical-align-middle padding-bottom-3">add_circle</mat-icon>
             </button>
           </div>
           <div fxFlex="100%" fxLayoutAlign="end">
-            <button mat-raised-button color="primary" (click)="imreportprofiles.click()" title="Import report profile">
+            <button mat-raised-button color="accent" (click)="imreportprofiles.click()" title="Import report profile">
               <mat-icon class="vertical-align-middle padding-bottom-3">playlist_add</mat-icon> Import
             </button>
             &nbsp;
-            <button *ngIf="reportProfileList.length > 0" mat-raised-button color="primary" (click)="exportprofiles()"
+            <button *ngIf="reportProfileList.length > 0" mat-raised-button color="accent" (click)="exportprofiles()"
               title="Export report profiles">
               <mat-icon class="vertical-align-middle padding-bottom-3">file_download</mat-icon> Export
             </button>
@@ -171,7 +171,7 @@
   </div>
   <div fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%">
 
-    <mat-card appearance="outlined">
+    <mat-card appearance="outlined" style="background-color: #ffffff30;">
       <mat-card-header>
         <mat-icon mat-card-avatar class="vertical-align-middle padding-bottom-3 size-45">bug_report</mat-icon>
         <mat-card-title>Report Templates</mat-card-title>
@@ -253,18 +253,18 @@
         <div fxLayout="row" fxLayoutGap="10px grid">
           <div fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start">
 
-            <button mat-mini-fab (click)="openDialogReportTemplates()" color="primary" title="Add report template">
+            <button mat-mini-fab (click)="openDialogReportTemplates()" style="color: white;" color="accent" title="Add report template">
               <i class="material-icons">add_circle</i>
             </button>
 
           </div>
           <div fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="end">
-            <button mat-raised-button color="primary" (click)="imreporttemplatess.click()"
+            <button mat-raised-button color="accent" (click)="imreporttemplatess.click()"
               title="Import report templates">
               <mat-icon class="vertical-align-middle padding-bottom-3">playlist_add</mat-icon> Import
             </button>
             &nbsp;
-            <button *ngIf="reportTemplateList.length > 0" mat-raised-button color="primary" (click)="exporttemplates()"
+            <button *ngIf="reportTemplateList.length > 0" mat-raised-button color="accent" (click)="exporttemplates()"
               title="Export report templates">
               <mat-icon class="vertical-align-middle padding-bottom-3">file_download</mat-icon> Export
             </button>
@@ -279,7 +279,7 @@
 
     <br>
 
-    <mat-card appearance="outlined">
+    <mat-card appearance="outlined" style="background-color: #ffffff30;">
       <mat-card-header>
         <mat-icon mat-card-avatar class="vertical-align-middle padding-bottom-3 size-45">public</mat-icon>
         <mat-card-title>VULNRΞPO API VAULT ACCESS</mat-card-title>
@@ -329,10 +329,10 @@
 
           </div>
           <div fxFlex="50%" fxLayoutAlign="end">
-            <button *ngIf="apiconneted || tryconnectdb" mat-raised-button color="primary"
+            <button *ngIf="apiconneted || tryconnectdb" mat-raised-button color="accent"
               (click)="exportvault()"><mat-icon class="vertical-align-middle padding-bottom-3">file_download</mat-icon>
               Export Vault</button>
-            <button type="button" *ngIf="!apiconneted && !tryconnectdb" mat-raised-button color="primary"
+            <button type="button" *ngIf="!apiconneted && !tryconnectdb" mat-raised-button color="accent"
               (click)="VaultFileInput.click()"><mat-icon
                 class="vertical-align-middle padding-bottom-3">playlist_add</mat-icon> Import Vault</button>
             <input hidden type="file" accept=".vulnrepo-vault" #VaultFileInput (change)="importvault($event.target)" />

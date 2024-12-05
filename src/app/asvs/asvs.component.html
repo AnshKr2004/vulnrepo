@@ -2,7 +2,7 @@
 
   <div fxLayout="row wrap" fxLayoutGap="10px grid">
     <div fxLayoutAlign="center center" fxFlex="10%" fxFlex.sm="100%" fxFlex.xs="100%">
-      <img width="60px" src="assets/issue.png">
+      <img width="60px" src="assets/issue.jpg">
     </div>
     <div fxLayoutAlign="start center" fxFlex="60%" fxFlex.sm="100%" fxFlex.xs="100%">
       <h1 style="margin: 0 0 0;" class="mat-headline-3">Application Security Verification Standard</h1>
@@ -19,11 +19,11 @@
 
   <br>
 
-  <mat-card *ngIf="asvs" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
+  <mat-card *ngIf="asvs" style="background-color: #ffffff30;" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
     {{asvs.Description}} <a class="active-link" target="_blank" href="https://owasp.org/www-project-application-security-verification-standard/">ASVS more info</a>
   </mat-card>
   <br>
-  <mat-card *ngIf="asvs" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
+  <mat-card *ngIf="asvs" style="background-color: #ffffff30;" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
 
     <mat-form-field color="accent" appearance="fill">
       <mat-label>Select an ASVS level</mat-label>
@@ -37,7 +37,7 @@
     </mat-form-field>
   </mat-card>
   <br>
-  <mat-card appearance="outlined" class="mdc-card my-card-content mdc-typography--body1 sticky">
+  <mat-card appearance="outlined" style="background-color: #ffffff30;" class="mdc-card my-card-content mdc-typography--body1 sticky">
     <div>ASVS Level: {{selectlevel}} Items: {{parsefunct(asvsdata).length}} Checked: {{selection.selected.length}}</div>
     <div>
       <mat-progress-bar color="accent" mode="determinate" value="{{(selection.selected.length / parsefunct(asvsdata).length) * 100}}"></mat-progress-bar>
@@ -46,7 +46,7 @@
 
   <br><br>
   <h2>Requirements</h2>
-  <mat-card *ngIf="asvs" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
+  <mat-card *ngIf="asvs" style="background-color: #ffffff30;" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
 
     <span *ngFor="let asvitem of asvs.Requirements">
 
@@ -57,7 +57,7 @@
         <h3 id="{{asvsubitem.Shortcode}} {{asvsubitem.Name}}">{{asvsubitem.Shortcode}} {{asvsubitem.Name}} <a class="active-link" href="/asvs4#{{asvsubitem.Shortcode}} {{asvsubitem.Name}}"><mat-icon class="vertical-align-middle padding-bottom-3">link</mat-icon></a></h3>
 
         <table *ngIf="parsefunct(asvsubitem.Items).length > 0" mat-table [dataSource]="parsefunct(asvsubitem.Items)"
-          class="mat-elevation-z8">
+          class="mat-elevation-z8" style="background-color:#ffffff30">
 
           <ng-container matColumnDef="select">
             <th mat-header-cell *matHeaderCellDef>

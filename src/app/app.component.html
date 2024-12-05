@@ -4,7 +4,7 @@
       <mat-icon>menu</mat-icon>
     </button>
     <span style="display: contents;">
-      <img style="margin-right: 15px;" width="35px" src="assets/logo/vulnrepo_logo.png"> 
+      <img style="margin-right: 15px;" width="35px" src="assets/logo/logo.jpg"> 
       
       <span class="neon flash">VULNRΞPO<span>VULNRΞPO</span></span>
     </span>
@@ -36,32 +36,32 @@
       <mat-menu #menu="matMenu">
 
         <a routerLink="/new-report" routerLinkActive="active-link" href="/new-report" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">add_circle_outline</mat-icon> Create new report
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">add_circle_outline</mat-icon> Create new report
         </a>
 
         <a routerLink="/import-report" routerLinkActive="active-link" href="/import-report" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">playlist_add</mat-icon> Import report
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">playlist_add</mat-icon> Import report
         </a>
 
         <a routerLink="/templates-list" routerLinkActive="active-link" href="/templates-list" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">bug_report</mat-icon>
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">bug_report</mat-icon>
           Templates List
         </a>
 
         <a routerLinkActive="active-link" mat-menu-item [matMenuTriggerFor]="methods">
-          <mat-icon class="vertical-align-middle padding-bottom-3">library_books</mat-icon>
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">library_books</mat-icon>
           Methodology
         </a>
         <a routerLink="/cve-search" routerLinkActive="active-link" href="/cve-search" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">search</mat-icon>
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">search</mat-icon>
           CVE Search
         </a>
         <a routerLink="/settings" routerLinkActive="active-link" href="/settings" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">settings</mat-icon>
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">settings</mat-icon>
           Settings
         </a>
         <a routerLink="/faq" routerLinkActive="active-link" href="/faq" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">live_help
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">live_help
           </mat-icon>
           FAQ
         </a>
@@ -90,17 +90,17 @@
 
       </mat-menu>
 
-      <mat-menu #methods="matMenu" xPosition="after" yPosition="above">
+      <mat-menu #methods="matMenu" xPosition="after" yPosition="above" style="background-color: #ffffff30;">
         <a routerLink="/asvs4" routerLinkActive="active-link" href="/asvs4" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">description</mat-icon>
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">description</mat-icon>
           ASVS 4.0.3
         </a>
         <a routerLink="/pcidss4" routerLinkActive="active-link" href="/pcidss4" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">description</mat-icon>
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">description</mat-icon>
           PCI DSS v4.0 Auditor
         </a>
         <a routerLink="/tbhm" routerLinkActive="active-link" href="/tbhm" mat-menu-item>
-          <mat-icon class="vertical-align-middle padding-bottom-3">description</mat-icon>
+          <mat-icon class="vertical-align-middle padding-bottom-3" routerLinkActive="active-link">description</mat-icon>
           TBHM - Fast Testing Checklist
         </a>
       </mat-menu>

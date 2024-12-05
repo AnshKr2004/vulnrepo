@@ -5,8 +5,8 @@
   
   <div fxLayoutAlign="start">
     <form class="example-full-width mdc-typography--body1" >
-      <mat-card appearance="outlined" class="mdc-card my-card-content">
-      <mat-form-field class="example-full-width" color="accent">
+      <mat-card appearance="outlined" class="mdc-card my-card-content" style="background-color: #ffffff30;">
+      <mat-form-field class="example-full-width" color="accent" >
         <input matInput placeholder="Report title (e.g: External penetration testing report)" #title [formControl]="titlenewreport" value="">
         <mat-error *ngIf="titlenewreport.hasError('notempty')">
           <strong>Title must not be empty!</strong>
@@ -91,7 +91,7 @@
       <mat-dialog-actions>
         <button mat-raised-button color="accent" (click)="addnewReport(title.value,pass.value,pass2.value)"><mat-icon class="vertical-align-middle padding-bottom-3 size-25">save</mat-icon> Create new report</button>
         &nbsp;
-        <button mat-raised-button color="primary" (click)="cancel()">Cancel</button>
+        <button mat-raised-button color="accent" (click)="cancel()">Cancel</button>
       </mat-dialog-actions>
 
     </mat-card>

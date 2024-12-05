@@ -18,7 +18,7 @@
       </div>
   
       <div fxFlex="40%" fxFlex.sm="50%" fxFlex.xs="100%">
-        <a style="width: 100%;" routerLink="/import-report" href="/import-report" mat-raised-button color="primary">
+        <a style="width: 100%;" routerLink="/import-report" href="/import-report" mat-raised-button color="accent">
           <mat-icon class="vertical-align-middle padding-bottom-3">playlist_add</mat-icon> Import report
         </a>
       
@@ -31,7 +31,7 @@
 
 </div>
 <br>
-<mat-card appearance="outlined" class="mdc-card my-card-content">
+<mat-card appearance="outlined" class="mdc-card my-card-content" style="background-color: #ffffff30;">
 
 
   <mat-table *ngIf="dataSource.data.length != 0" mat-table [dataSource]="dataSource" matSort matSortActive="report_createdate" matSortDirection="desc" class="mat-elevation-z8">

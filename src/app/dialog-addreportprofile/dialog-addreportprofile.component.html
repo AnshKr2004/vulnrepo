@@ -1,8 +1,8 @@
-<h2 mat-dialog-title>
+<h2 mat-dialog-title style="background-color: mediumblue;">
   <mat-icon class="vertical-align-middle padding-bottom-3">add</mat-icon>Report Settings Profile
 </h2>
 
-<mat-dialog-content class="mat-typography">
+<mat-dialog-content class="mat-typography" style="background-color: mediumblue;">
   <div>
 
     <mat-form-field class="example-full-width" color="accent">
@@ -35,11 +35,11 @@
   
   
       <div fxFlex="33%" fxFlex.sm="100%" fxFlex.xs="100%">
-        <button mat-raised-button color="primary" (click)="OpenDialogCSS()" title="Add custom CSS">
+        <button mat-raised-button color="accent" (click)="OpenDialogCSS()" title="Add custom CSS">
           <mat-icon class="vertical-align-middle padding-bottom-3">add_circle</mat-icon> Add custom CSS
         </button>
         <br><br>
-        <button mat-raised-button color="primary" (click)="OpenDialogCustomContent()" title="Add custom content">
+        <button mat-raised-button color="accent" (click)="OpenDialogCustomContent()" title="Add custom content">
           <mat-icon class="vertical-align-middle padding-bottom-3">add_circle</mat-icon> Add custom content
         </button>
   
@@ -51,7 +51,7 @@
   
       <div fxFlex="60%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center">
   
-        <button mat-flat-button (click)="fileuploadInput.click()" color="primary" title="Upload report logo" style="margin-right: 10px!important;">
+        <button mat-flat-button (click)="fileuploadInput.click()" color="accent" title="Upload report logo" style="margin-right: 10px!important;">
           <i class="material-icons">attach_file</i>
           <input type="file" #fileuploadInput id="file" accept="image/*" (change)="importlogo($event.target)" name="myfiles" style="display:none;">
         </button>
@@ -102,11 +102,11 @@
     <hr>
   </div>
 </mat-dialog-content>
-<mat-dialog-actions align="start">
+<mat-dialog-actions align="start" style="background-color: mediumblue;">
   <div fxLayout="row">
     <button mat-flat-button color="accent" *ngIf="data == 'open'" (click)="addNewProfile()"><mat-icon>save_as</mat-icon> Add</button>
     <button mat-flat-button color="accent" *ngIf="data !== 'open'" (click)="editProfile()"><mat-icon>save_as</mat-icon> Save</button>
     &nbsp;
-    <button mat-flat-button color="primary" (click)="cancel()"><mat-icon>cancel</mat-icon> Cancel</button>
+    <button mat-flat-button color="accent" (click)="cancel()"><mat-icon>cancel</mat-icon> Cancel</button>
   </div>
 </mat-dialog-actions>

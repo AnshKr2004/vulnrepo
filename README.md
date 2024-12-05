@@ -1,4 +1,4 @@
-<div align="center"><img src="/src/assets/logo/vulnrepo_logo.png" width="300"></div>
+<div align="center"><img src="/src/assets/logo/logo.jpg" width="300"></div>
 
 # VULNRΞPO - Vulnerability Report Generator & Repository
 

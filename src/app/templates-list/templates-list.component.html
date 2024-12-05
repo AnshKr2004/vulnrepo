@@ -30,7 +30,7 @@
 
   </div>
 
-  <mat-card appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
+  <mat-card appearance="outlined" class="mdc-card my-card-content mdc-typography--body1" style="background-color: #ffffff30;">
     <div *ngIf="sourceSelect == 'VULNREPO'">
       <p>
         List contains issues templates used during creating a report, source name: "VULNRΞPO". Share your templates on: 
@@ -44,7 +44,7 @@
   
   
       <table mat-table [dataSource]="dataSource" multiTemplateDataRows matSort matSortActive="cvss"
-        matSortDirection="desc">
+        matSortDirection="desc" style="background-color: #ffffff30;">
         <ng-container matColumnDef="title">
           <th mat-header-cell *matHeaderCellDef mat-sort-header> Title </th>
           <td mat-cell *matCellDef="let element">
@@ -87,7 +87,7 @@
         <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
       </table>
   
-      <mat-paginator [pageSizeOptions]="[100,500,1000]" showFirstLastButtons></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[100,500,1000]" showFirstLastButtons style="background-color: #ffffff30;"></mat-paginator>
   
     </div>
     <p *ngIf="getvulnlistStatus">{{getvulnlistStatus}}</p>

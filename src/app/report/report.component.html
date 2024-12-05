@@ -1,6 +1,6 @@
 <div fxLayout="row wrap" fxLayoutGap="10px grid">
   <div fxLayoutAlign="center center" fxFlex="10%" fxFlex.sm="100%" fxFlex.xs="100%">
-    <img title="VULNRΞPO REPORT" width="60px" src="assets/issue.png">
+    <img title="VULNRΞPO REPORT" width="60px" src="assets/issue.jpg">
   </div>
   <div fxLayoutAlign="start center" fxFlex="90%" fxFlex.sm="100%" fxFlex.xs="100%">
     <h1 style="margin: 0 0 0;" class="mat-headline-3">{{reportdesc?.report_name}} <a *ngIf="decryptedReportDataChanged"
@@ -51,7 +51,7 @@
 
         <div>
 
-          <button mat-fab extended class="mat-elevation-z9" color="primary" (click)="saveReportChanges(reportdesc.report_id)">
+          <button mat-fab extended class="mat-elevation-z9" color="accent" (click)="saveReportChanges(reportdesc.report_id)">
             <mat-icon class="vertical-align-middle padding-bottom-3">save</mat-icon> Save changes and release a new version
           </button>
         </div>
@@ -451,7 +451,7 @@
                   </div>
 
                   <div fxLayoutAlign="end start" fxFlex="20%" fxFlex.sm="20%" fxFlex.xs="100%">
-                    <button mat-raised-button color="primary" matBadge="{{dec_data?.bounty.length}}"
+                    <button mat-raised-button color="accent" matBadge="{{dec_data?.bounty.length}}"
                       matBadgeColor="accent" (click)="searchBounty(dec_data)" title="Search for bug bounty program">
                       <mat-icon>attach_money</mat-icon>
                       <mat-icon>search</mat-icon>
@@ -501,7 +501,7 @@
           <mat-action-row align="end">
 
 
-            <button mat-fab (click)="fileuploadInput.click()" color="primary" title="Upload file">
+            <button mat-fab (click)="fileuploadInput.click()" color="accent" title="Upload file">
               <i class="material-icons">attach_file</i>
               <input type="file" #fileuploadInput id="file" accept=".*" (change)="uploadAttach($event.target, dec_data)"
                 style="display:none;" multiple>
@@ -514,7 +514,7 @@
 
             <div fxFlex></div>
 
-            <button mat-fab color="primary" (click)="saveTemplate(dec_data)" title="Save issue as template">
+            <button mat-fab color="accent" (click)="saveTemplate(dec_data)" title="Save issue as template">
               <mat-icon class="vertical-align-middle padding-bottom-3" matSuffix>save_as</mat-icon>
             </button>
 
@@ -868,7 +868,7 @@
               <div fxFlex="100%" fxFlex.sm="100%" fxFlex.xs="100%" fxLayoutAlign="start center">
 
                 <button mat-fab style="margin-right: 10px!important;" class="mdc-elevation--z11" (click)="fileuploadInput.click()"
-                  color="primary" title="Attach report logo" extended>
+                  color="accent" title="Attach report logo" extended>
 
                   <i class="material-icons">attach_file</i>
                   Attach logo

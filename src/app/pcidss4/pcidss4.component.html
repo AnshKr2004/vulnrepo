@@ -1,6 +1,6 @@
 <div fxLayout="row wrap" fxLayoutGap="10px grid">
   <div fxLayoutAlign="center center" fxFlex="10%" fxFlex.sm="100%" fxFlex.xs="100%">
-    <img width="60px" src="assets/issue.png">
+    <img width="60px" src="assets/issue.jpg">
   </div>
   <div fxLayoutAlign="start center" fxFlex="50%" fxFlex.sm="100%" fxFlex.xs="100%">
     <h1 style="margin: 0 0 0;" class="mat-headline-3">PCI DSS v4.0 Auditor</h1>
@@ -14,13 +14,13 @@
 
   <br>
 
-  <mat-card appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
+  <mat-card appearance="outlined" style="background-color: #ffffff30;" class="mdc-card my-card-content mdc-typography--body1">
     PCI Data Security Standard (PCI DSS) is a global standard that provides a baseline of technical and operational requirements designed to protect account data. <br> 
     <a class="active-link" target="_blank" href="https://www.pcisecuritystandards.org/">PCI DSS more info</a>
   </mat-card>
 
   <br>
-  <mat-card appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
+  <mat-card appearance="outlined" style="background-color: #ffffff30;" class="mdc-card my-card-content mdc-typography--body1">
 
     <div class="mdc-typography--body1" fxLayout="row" fxLayout.xs="column" fxLayoutGap="10px grid">
 
@@ -63,7 +63,7 @@
 
   <br> <br>
 
-<mat-card appearance="outlined" class="mdc-card my-card-content mdc-typography--body1 sticky">
+<mat-card appearance="outlined" style="background-color: #ffffff30;" class="mdc-card my-card-content mdc-typography--body1 sticky">
 
   Requirements: {{parsefunct(pcidssdata).length}} Checked: {{selection.selected.length}}<br>
   <mat-progress-bar color="accent" mode="determinate" value="{{(selection.selected.length / parsefunct(pcidssdata).length) * 100}}"></mat-progress-bar>
@@ -72,7 +72,7 @@
 
   <br> <br>
 
-  <mat-card *ngIf="pcidss" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
+  <mat-card *ngIf="pcidss" style="background-color: #ffffff30;" appearance="outlined" class="mdc-card my-card-content mdc-typography--body1">
 
     <span *ngFor="let pcicat of pcidss.items">
         <h2>{{pcicat.requirement}}</h2>
@@ -81,7 +81,7 @@
         <span *ngFor="let pcisubcat of pcicat.subitems">
             <h3 *ngIf="parsefunct(pcisubcat.litems).length > 0">{{pcisubcat.subreq}}</h3>
 
-            <table *ngIf="parsefunct(pcisubcat.litems).length > 0" mat-table [dataSource]="parsefunct(pcisubcat.litems)" class="mat-elevation-z8">
+            <table *ngIf="parsefunct(pcisubcat.litems).length > 0" style="background-color: #ffffff30;" mat-table [dataSource]="parsefunct(pcisubcat.litems)" class="mat-elevation-z8">
 
                 <ng-container matColumnDef="select">
                   <th mat-header-cell *matHeaderCellDef>
