@@ -2,7 +2,7 @@
 
 # VULNRΞPO - Vulnerability Report Generator & Repository
 
-Check online: https://vulnrepo.com/
+Check online: 
 
 Video walkthrough/Tutorial:  
 [![Guide](https://img.youtube.com/vi/cW_kVPtUJbU/0.jpg)](https://www.youtube.com/watch?v=cW_kVPtUJbU)
